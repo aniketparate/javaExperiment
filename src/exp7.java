@@ -13,7 +13,7 @@ class teacher{
     }
 
     void display() {
-
+        System.out.println(" Name : " + name + "\n ID : " + id);
     }
 }
 
@@ -26,6 +26,9 @@ class professor extends teacher{
         basic = 0;
     }
 
+    void display1() {
+        System.out.println( " Name : " + name + "\n ID : " + id + "\n Year : " + year + "\n Basic : " + basic + "\n--------------------");
+    }
 }
 
 class associate_professor extends teacher{
@@ -36,6 +39,10 @@ class associate_professor extends teacher{
         year = 0;
         basic = 0;
     }
+
+    void display2() {
+        System.out.println(" Year : " + year + "\n Basic : " + basic + "\n--------------------");
+    }
 }
 class assistant_professor extends teacher{
     int year;
@@ -45,7 +52,44 @@ class assistant_professor extends teacher{
         year = 0;
         basic = 0;
     }
+
+    void display3() {
+        this.display();
+        System.out.println(" Year : " + year + "\n Basic : " + basic + "\n--------------------");
+    }
 }
 
 public class exp7 {
+    public static void main(String[] args) {
+        teacher superOB = new teacher();
+        professor P = new professor();
+        associate_professor  AP = new associate_professor();
+        assistant_professor ASP = new assistant_professor();
+
+        superOB.name = "PRINCIPLE";
+        superOB.id = 0;
+        superOB.display();
+        System.out.println("--------------------");
+
+        P.name = "Nikhil";
+        P.id = 2;
+        P.year = 2000;
+        P.basic = 90000;
+        //P.display();
+        P.display1();
+
+        AP.name = "Mukesh";
+        AP.id = 5;
+        AP.year = 2005;
+        AP.basic = 75000;
+        AP.display();
+        AP.display2();
+
+        ASP.name = "Omkar";
+        ASP.id = 10;
+        ASP.year = 2010;
+        ASP.basic = 50000;
+        //ASP.display();
+        ASP.display3();
+    }
 }

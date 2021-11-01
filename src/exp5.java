@@ -1,8 +1,6 @@
 //Create a Java based application to perform various ways of Method overloading.
 //i.e No parameters, types of paratemeters, Constructor Overloading
 
-import java.util.Scanner;
-
 class operations {
     String name;
     int a, b;
@@ -24,25 +22,23 @@ class operations {
         b = y;
         System.out.println(" The sum of two numbers is : " + (a + b) + "\n------------------------------------------");
     }
-}
-
-public class exp5 {
-    static Scanner sc = new Scanner(System.in);
 
     // No Parameters
-    public static void display() {
-        System.out.println(" THIS IS A SIMPLE APPLICATION BASED ON JAVA\n------------------------------------------");
+    static void display() {
+        System.out.println("\n THIS IS A SIMPLE APPLICATION BASED ON JAVA\n------------------------------------------");
     }
 
     // String return type
-    public static String print() {
+    static String print() {
         return " This is the end of application.";
     }
+}
 
+public class exp5 {
     public static void main(String[] args) {
-        display();
+        operations.display();
         operations op = new operations("ANIKET");
         operations op1 = new operations(5, 10);
-        System.out.println(print());
+        System.out.println(operations.print());
     }
 }
