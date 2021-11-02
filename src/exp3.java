@@ -1,10 +1,10 @@
-class employee {
+class employ {
     String name;
     String year;
     String address;
     String salary;
 
-    employee(String name, String year, String address, String salary) {
+    employ(String name, String year, String address, String salary) {
         this.name = name;
         this.year = year;
         this.address = address;
@@ -23,11 +23,11 @@ class employee {
 public class exp3 {
     public static void main(String[] args) {
 
-        employee[] emp = new employee[3];
+        employ[] emp = new employ[3];
 
-        emp[0] = new employee("Robert", "2001", "Kurla", "50000/-");
-        emp[1] = new employee("Mahesh", "2002", "Bandra", "35000/-");
-        emp[2] = new employee("Ramesh", "2004", "Mumbai", "30000/-");
+        emp[0] = new employ("Robert", "2001", "Kurla", "50000/-");
+        emp[1] = new employ("Mahesh", "2002", "Bandra", "35000/-");
+        emp[2] = new employ("Ramesh", "2004", "Mumbai", "30000/-");
 
         System.out.print("\n NAME");
         System.out.print("\t\tYEAR OF JOINING");
