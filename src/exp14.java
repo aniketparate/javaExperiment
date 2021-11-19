@@ -36,7 +36,7 @@ public class exp14 {
         a.setWithdraw();
 
         System.out.println(" Balance : " + a.Min_Bal);
-        if (a.Balance > 1000){
+        if (a.Balance >= 1000){
             System.out.println(" Balance : " + a.Balance);
         } else {
             try {
