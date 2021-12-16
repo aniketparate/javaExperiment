@@ -7,7 +7,9 @@
 import java.util.Scanner;
 
 class InvalidPasswordException extends Exception {
-
+    InvalidPasswordException() {
+        System.out.println(" Please enter valid password of length 8 containing one digit and one Special Symbol.");
+    }
 }
 
 public class exp13 {
@@ -38,7 +40,7 @@ public class exp13 {
             try {
                 throw new InvalidPasswordException();
             } catch (InvalidPasswordException e) {
-                System.out.println(" Please enter valid password of length 8 containing one digit and one Special Symbol.");
+                System.out.println(e);
             }
         }
     }
